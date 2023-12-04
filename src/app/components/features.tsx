@@ -1,18 +1,94 @@
 interface FeaturesProps {}
 
-import { Brush } from "lucide-react";
+import {
+  Brush,
+  Clock,
+  FolderDown,
+  FolderPlus,
+  ListTodo,
+  PenLine,
+} from "lucide-react";
+
 import Image from "next/image";
 import rightBg from "../assets/right-bg.png";
 
 export function Features(props: FeaturesProps) {
   return (
-    <section className="px-6 mt-16 py-4 border-b border-gray-800">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="uppercase tracking-wider text-2xl mb-20">
-          Como funciona?
-        </h2>
+    <section className="py-24">
+      <div className="grid grid-cols-[1fr_1fr] max-w-7xl mx-auto justify-between gap-8">
+        <div className="flex-1 flex items-center justify-center">
+          <Image className="h-[600px]" src={rightBg} alt="" />
+        </div>
+        <div>
+          <h4 className="text-sm text-slate-600">Como funciona?</h4>
+          <h2 className="text-3xl font-semibold leading-relaxed mb-10">
+            Passos para usar o nosso serviço
+          </h2>
 
-        <div className="flex flex-col gap-24">
+          <ul className="grid grid-cols-2 gap-8">
+            <li className="flex flex-col items-start gap-3">
+              <div className="bg-primary-50 p-2 rounded-md">
+                <FolderDown className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <h3 className="text-slate-700 font-bold text-lg">
+                  Baixe e cadastre-se
+                </h3>
+                <p className="text-xs text-slate-800">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, qui! Nobis dolorum mollitia consequuntur velit.
+                </p>
+              </div>
+            </li>
+
+            <li className="flex flex-col items-start gap-3">
+              <div className="bg-primary-50 p-2 rounded-md">
+                <PenLine className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <h3 className="text-slate-700 font-bold text-lg">
+                  Crie sua demanda
+                </h3>
+                <p className="text-xs text-slate-800">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, qui! Nobis dolorum mollitia consequuntur velit.
+                </p>
+              </div>
+            </li>
+
+            <li className="flex flex-col items-start gap-3">
+              <div className="bg-primary-50 p-2 rounded-md">
+                <Clock className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <h3 className="text-slate-700 font-bold text-lg">
+                  Aguarde a aprovação
+                </h3>
+                <p className="text-xs text-slate-800">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, qui! Nobis dolorum mollitia consequuntur velit.
+                </p>
+              </div>
+            </li>
+
+            <li className="flex flex-col items-start gap-3">
+              <div className="bg-primary-50 p-2 rounded-md">
+                <ListTodo className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <h3 className="text-slate-700 font-bold text-lg">
+                  Acompanhe todo o progresso
+                </h3>
+                <p className="text-xs text-slate-800">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, qui! Nobis dolorum mollitia consequuntur velit.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        {/* <div className="flex flex-col gap-24">
           <div className="flex flex-col justify-between md:items-start  md:flex-row gap-20">
             <div className="mb-6 max-w-lg">
               <h3 className="text-primary-200 font-medium text-8xl mb-1">01</h3>
@@ -81,7 +157,7 @@ export function Features(props: FeaturesProps) {
               className="rotate-6 h-[618px] object-contain"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
