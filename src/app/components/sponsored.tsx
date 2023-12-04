@@ -10,26 +10,26 @@ export function Sponsored(props: SponsoredProps) {
           </h2>
         </div>
          */}
-        <div className="flex items-center justify-around">
+        <div className="flex items-center gap-4 justify-around">
           <img
             src="https://omnifood.dev/img/logos/techcrunch.png"
             alt=""
-            className="h-4 brightness-0 opacity-50 md:h-8"
+            className="h-3 brightness-0 opacity-50 md:h-8"
           />
           <img
             src="https://omnifood.dev/img/logos/business-insider.png"
             alt=""
-            className="h-4 brightness-0 opacity-50 md:h-8"
+            className="h-3 brightness-0 opacity-50 md:h-8"
           />
           <img
             src="https://omnifood.dev/img/logos/the-new-york-times.png"
             alt=""
-            className="h-4 brightness-0 opacity-50 md:h-8"
+            className="h-3 brightness-0 opacity-50 md:h-8"
           />
           <img
             src="https://omnifood.dev/img/logos/usa-today.png"
             alt=""
-            className="h-4 brightness-0 opacity-50 md:h-8"
+            className="h-3 brightness-0 opacity-50 md:h-8"
           />
         </div>
       </div>

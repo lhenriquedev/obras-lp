@@ -14,18 +14,18 @@ import rightBg from "../assets/right-bg.png";
 
 export function Features(props: FeaturesProps) {
   return (
-    <section className="py-24">
-      <div className="grid grid-cols-[1fr_1fr] max-w-7xl mx-auto justify-between gap-8">
+    <section className="py-12 md:py-24">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] px-4 max-w-7xl mx-auto justify-between gap-8">
         <div className="flex-1 flex items-center justify-center">
-          <Image className="h-[600px]" src={rightBg} alt="" />
+          <Image className="md:h-[600px]" src={rightBg} alt="" />
         </div>
         <div>
-          <h4 className="text-sm text-slate-600">Como funciona?</h4>
-          <h2 className="text-3xl font-semibold leading-relaxed mb-10">
+          <h4 className="text-sm text-primary-700 font-bold">Como funciona?</h4>
+          <h2 className="text-2xl text-gray-900 md:text-3xl font-semibold leading-relaxed mb-10">
             Passos para usar o nosso serviço
           </h2>
 
-          <ul className="grid grid-cols-2 gap-8">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <li className="flex flex-col items-start gap-3">
               <div className="bg-primary-50 p-2 rounded-md">
                 <FolderDown className="w-5 h-5" />

@@ -24,7 +24,7 @@ export function Hero() {
           </div>
         </div>
         <Image
-          className="h-[618px] object-contain"
+          className=" md:h-[618px] object-contain"
           alt="Hero image"
           src={rightBg}
         />

@@ -16,13 +16,15 @@ export function Faq(props: FaqProps) {
   const [value, setValue] = useState("");
 
   return (
-    <section className="py-24 h-full  relative bg-pattern bg-cover bg-no-repeat">
-      <div className="max-w-3xl w-full mx-auto relative">
+    <section className="py-4 md:py-24 h-full  relative bg-pattern bg-cover bg-no-repeat">
+      <div className="max-w-3xl px-4 w-full mx-auto relative">
         <div className="flex flex-col mb-8 justify-center items-center gap-2 max-w-sm mx-auto text-center">
           <h2 className="text-primary-800 uppercase text-sm font-medium">
             FAQ
           </h2>
-          <h1 className="text-3xl font-bold">Perguntas frequentes</h1>
+          <h1 className="text-2xl md:text-3xl font-bold">
+            Perguntas frequentes
+          </h1>
         </div>
 
         <div className="w-full">
